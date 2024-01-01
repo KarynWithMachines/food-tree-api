@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 app.use(express.json());
 app.use(cors({ credentials: true, origin: true }));
 
-app.use(express.static("./public"));
+app.use(express.static("./public")); //home.html
 
 app.use("/a.holder", require("./controllers/account-holder"));
 app.use("/u.action", require("./controllers/user-action"));
